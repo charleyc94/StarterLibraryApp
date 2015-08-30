@@ -56,15 +56,15 @@ public class MainActivity extends Activity
         mTabHost.setup();
 
         TabHost.TabSpec spec;
-        spec = mTabHost.newTabSpec("tab_1").setIndicator("Tab 1").setContent(R.id.tab_1);
+        spec = mTabHost.newTabSpec("tab_1").setIndicator("TAB 1").setContent(R.id.tab_1);
         mTabHost.addTab(spec);
         mTabHost.getTabWidget().getChildAt(0).setBackgroundColor(0xffffff);
 
-        spec = mTabHost.newTabSpec("tab_2").setIndicator("Tab 2").setContent(R.id.tab_2);
+        spec = mTabHost.newTabSpec("tab_2").setIndicator("TAB 2").setContent(R.id.tab_2);
         mTabHost.addTab(spec);
         mTabHost.getTabWidget().getChildAt(1).setBackgroundColor(0xffffff);
 
-        spec = mTabHost.newTabSpec("tab_3").setIndicator("Tab 3").setContent(R.id.tab_3);
+        spec = mTabHost.newTabSpec("tab_3").setIndicator("TAB 3").setContent(R.id.tab_3);
         mTabHost.addTab(spec);
         mTabHost.getTabWidget().getChildAt(2).setBackgroundColor(0xffffff);
 
@@ -111,7 +111,7 @@ public class MainActivity extends Activity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getFragmentManager();
+
 
     }
 
@@ -156,9 +156,7 @@ public class MainActivity extends Activity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
         return super.onOptionsItemSelected(item);
     }
 
