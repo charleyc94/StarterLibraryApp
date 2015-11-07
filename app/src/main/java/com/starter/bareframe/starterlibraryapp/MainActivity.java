@@ -96,7 +96,7 @@ public class MainActivity extends Activity
                 TextView view = (TextView) mTabHost.getTabWidget().getChildAt(currentTab).findViewById(android.R.id.title);
                 view.bringToFront();
                 view.setTextColor(Color.parseColor("#bababa"));
-                //CHARLEY: Set all the rest of the tab's text color to grey
+                //CHARLEY: Set all the rest of the tab's text color to black
                 for (int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
                     if (mTabHost.getTabWidget().getChildAt(i) != mTabHost.getTabWidget().getChildAt(currentTab)) {
                         TextView tv = (TextView) mTabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
